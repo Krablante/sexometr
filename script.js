@@ -1,3 +1,18 @@
+/* Єдиний спосіб додати відео через ванільну жс. Тобто це можливо тільки через створення 
+елементу на сторінці через жску. Не знаю як там у вас, продвинутих геїв, але тут так.
+
+P.S. потрібно додатково задати стиль через #
+
+let video = document.createElement('video');
+video.id = "backVideo";
+video.src = "voitenko.mp4";
+video.autoplay = true;
+video.muted = true;
+video.loop = true;
+
+document.body.appendChild(video);
+
+*/
 let timer = document.getElementById('timer');
 let startBtn = document.getElementById('startBtn');
 let pauseBtn = document.getElementById('pauseBtn');
